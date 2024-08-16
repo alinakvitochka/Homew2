@@ -1,0 +1,170 @@
+/* Основні стилі для тіла сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #efcff7;
+}
+/* Стилі для заголовка */
+div{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+body h1 {
+    margin: 0;
+}
+h2 {
+    color: #ff66b2;
+}
+
+h3 {
+    color: #ff66b2;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: #0f0f0f;
+}
+
+
+/* Стилі для навігаційного меню */
+div{
+    background-color: #fff;
+    border-bottom: 2px solid #ff99cc;
+}
+
+div a href {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div a href a {
+    text-decoration: none;
+    color: #ff66b2;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+div a href a:hover {
+    background-color: #ffe6f2;
+    color: #ff66b2;
+}
+
+/* Основний контейнер */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ff66b2;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Стилі для форм */
+form {
+    display: grid;
+    gap: 1em;
+}
+
+fieldset {
+    border: 1px solid #fdabf7;;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #535353;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #fdabf7;;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #fdabf7;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+/* Стилі для галереї */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: calc(33.333% - 20px); /* Три изображения в ряд с учетом отступов */
+    box-sizing: border-box;
+    background-color: #fdf8f8;
+    border: 1px solid #e3bfbf;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%; /* Ширина изображения занимает 100% контейнера */
+    height: auto; /* Высота определяется автоматически для сохранения соотношения сторон */
+    display: block;
+}
+
+.gallery-item p {
+    margin: 0;
+    padding: 10px;
+    color: #333;
+}
+
+/* Стиль для изображения при наведении */
+.gallery-item a {
+    text-decoration: none;
+}
+
+.gallery-item a:hover img {
+    opacity: 0.9;
+}
