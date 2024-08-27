@@ -1,106 +1,123 @@
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdf4f4;
-    color: #333;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf4f4;
+  color: #333;
+}
+
+.navigation {
+  background-color: #fdf4f4;
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.nav-link {
+  color: #d44d77; 
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
 div {
-    padding: 12px;
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  padding: 5px 10px;
 }
 
 div a {
-    color: #f06292;
-    text-decoration: none;
-    font-style: italic;
-}
-
-div a:hover {
-    text-decoration: underline;
+  color: #f06292;
+  text-decoration: none;
+  font-style: italic;
+  padding: 10px 10px;
 }
 
 .container {
-    width: 75%;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 25px;
-    background-color: #fff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
+  width: 75%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
 }
 
 .about {
-    display: flex;
+  display: flex;
 }
 
 header {
-    font-size: 2.5em;
-    color: #f06292;
-    border-bottom: 4px solid #f06292;
-    padding-bottom: 14px;
-    margin-bottom: 25px;
-    text-align: center;
-    margin-top: 15px;
+  font-size: 2.5em;
+  color: #f06292;
+  border-bottom: 4px solid #f06292;
+  padding-bottom: 14px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 h2,
 h3,
 h4 {
-    color: #d81b60;
-    margin-top: 20px;
+  color: #d81b60;
+  margin-top: 20px;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
 }
 
 fieldset {
-    border: 2px solid #f06292;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #fce4ec;
+  border: 2px solid #f06292;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fce4ec;
 }
 
 legend {
-    font-weight: bold;
-    color: #f06292;
-    font-size: 16px;
+  font-weight: bold;
+  color: #f06292;
+  font-size: 16px;
 }
 
 label {
-    display: block;
-    margin-bottom: 4px;
-    color: #333;
-    font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 14px;
 }
 
 input[type="text"],
@@ -110,80 +127,105 @@ input[type="url"],
 input[type="date"],
 textarea,
 select {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #f06292;
-    border-radius: 6px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f06292;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 textarea {
-    height: 120px;
-    resize: vertical;
+  height: 120px;
+  resize: vertical;
 }
 
 button {
-    background-color: #f06292;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  background-color: #f06292;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #d81b60;
+  background-color: #d81b60;
 }
 
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
 }
 
-.gallery{
-    background-color: #fdf4f4;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.gallery {
+  background-color: #fdf4f4;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-    .gallery p {
-        font-size: 1.5rem;
-        margin: 15px 0;
-        color: #333;
-        text-align: center;
-        padding: 0 5px;
-        background-color: #f9f9f9;
-        margin-bottom: 20px;
-    }
+.gallery p {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+  padding: 0 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-    }
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #d44d77;
+  border-radius: 8px;
+  background-color: #fce4ec;
+}
 
-    nav ul li {
-        display: inline;
-        margin-right: 15px;
-    }
+section h2 {
+  color: #d44d77;
+  margin-top: 0;
+}
+
+section p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 5px 0;
+}
+
+nav ul li a {
+  color: #d44d77;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
